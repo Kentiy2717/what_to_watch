@@ -20,6 +20,9 @@ class Opinion(db.Model):
     source = db.Column(
         db.String(256)
     )
+    images = db.Column(
+        db.JSON
+    )
     timestamp = db.Column(
         db.DateTime,
         index=True,
